@@ -52,6 +52,7 @@ public class Calculadora extends javax.swing.JFrame {
         BorrarActual = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calculadora");
 
         jLabel1.setBackground(new java.awt.Color(255, 51, 51));
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
