@@ -719,11 +719,13 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_CeroActionPerformed
 
     private void RaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RaizActionPerformed
+        valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         PanelTexto.setText(Math.sqrt(Float.parseFloat(PanelTexto.getText())) + "");
         PanelTextoPrevio.setText("√"+valor1+"");
     }//GEN-LAST:event_RaizActionPerformed
 
     private void CuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuadradoActionPerformed
+        valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         PanelTexto.setText(Math.pow(Float.parseFloat(PanelTexto.getText()), 2) + "");
         PanelTextoPrevio.setText(valor1 +""+"^2");
     }//GEN-LAST:event_CuadradoActionPerformed
