@@ -5,7 +5,7 @@ package calculadora;
  * @authors Ramon Perez
  */
 public class Calculadora extends javax.swing.JFrame {
-
+    
     public static double valor1;
     public static double valor2;
     public static double Cos, Sin, Tan, aCos, aSin, aTan;
@@ -13,13 +13,18 @@ public class Calculadora extends javax.swing.JFrame {
     public static boolean bandComa = false;
 
     /**
-     * 1 Suma 2 Resta 3 Multiplicacion 4 Division 5 X elevado a n numero
+     * 1 Suma 
+     * 2 Resta 
+     * 3 Multiplicacion 
+     * 4 Division 
+     * 5 X elevado a n numero 
+     * 6 Porcentaje
      */
     public Calculadora() {
         initComponents();
         setLocationRelativeTo(null);
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -754,6 +759,11 @@ public class Calculadora extends javax.swing.JFrame {
             case 5:
                 PanelTexto.setText(Math.pow(valor1, valor2) + "");
                 PanelTextoPrevio.setText(valor1 + "^" + valor2);
+                break;
+            case 6:
+                PanelTextoPrevio.setText(valor1 + " % " + valor2);
+                PanelTexto.setText((valor1 * valor2) / 100 + "");
+                break;
             default:
                 break;
         }
@@ -832,7 +842,10 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_BorrarTodoActionPerformed
 
     private void PorcentajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PorcentajeActionPerformed
-        // TODO add your handling code here:
+        valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
+        PanelTextoPrevio.setText(valor1 + "");
+        PanelTexto.setText("");
+        operacion = 6;
     }//GEN-LAST:event_PorcentajeActionPerformed
 
     private void BorrarCaracterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BorrarCaracterActionPerformed
@@ -846,7 +859,7 @@ public class Calculadora extends javax.swing.JFrame {
 //Metodo Trigonometria
 
     public void Trigonometria() {
-
+        
         switch (funciones) {
             //seno
             case 11:
