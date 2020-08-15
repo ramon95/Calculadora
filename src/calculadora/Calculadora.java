@@ -12,9 +12,8 @@ public class Calculadora extends javax.swing.JFrame {
     public static int operacion, funciones;
     public static boolean bandComa = false;
 
-
     /**
-     * 1 Suma 2 Resta 3 Multiplicacion 4 Division
+     * 1 Suma 2 Resta 3 Multiplicacion 4 Division 5 X elevado a n numero
      */
     public Calculadora() {
         initComponents();
@@ -690,7 +689,7 @@ public class Calculadora extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-   
+
     private void UnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoActionPerformed
         PanelTexto.setText(PanelTexto.getText() + "1");
     }//GEN-LAST:event_UnoActionPerformed
@@ -723,8 +722,8 @@ public class Calculadora extends javax.swing.JFrame {
     private void MultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MultiplicacionActionPerformed
         valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         operacion = 3;
-        PanelTexto.setText("");  
-        PanelTextoPrevio.setText(""+valor1);
+        PanelTexto.setText("");
+        PanelTextoPrevio.setText("" + valor1);
     }//GEN-LAST:event_MultiplicacionActionPerformed
 
     private void IgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IgualActionPerformed
@@ -732,26 +731,29 @@ public class Calculadora extends javax.swing.JFrame {
         switch (operacion) {
             case 1:
                 PanelTexto.setText(valor1 + valor2 + "");
-                PanelTextoPrevio.setText(valor1 +" + "+ valor2 +"");
+                PanelTextoPrevio.setText(valor1 + " + " + valor2 + "");
                 break;
             case 2:
                 PanelTexto.setText(valor1 - valor2 + "");
-                PanelTextoPrevio.setText(valor1 +" - "+ valor2 +"");
+                PanelTextoPrevio.setText(valor1 + " - " + valor2 + "");
                 break;
             case 3:
                 PanelTexto.setText(valor1 * valor2 + "");
-                PanelTextoPrevio.setText(valor1 +" * "+ valor2 +"");
+                PanelTextoPrevio.setText(valor1 + " * " + valor2 + "");
                 break;
             case 4:
                 if (valor2 > 0) {
                     PanelTexto.setText(valor1 / valor2 + "");
-                    PanelTextoPrevio.setText(valor1 +" / "+ valor2 +"");
+                    PanelTextoPrevio.setText(valor1 + " / " + valor2 + "");
                 } else {
                     PanelTexto.setText("No se puede divider entre cero");
                     valor1 = 0;
                     valor2 = 0;
                 }
                 break;
+            case 5:
+                PanelTexto.setText(Math.pow(valor1, valor2) + "");
+                PanelTextoPrevio.setText(valor1 + "^" + valor2);
             default:
                 break;
         }
@@ -760,19 +762,19 @@ public class Calculadora extends javax.swing.JFrame {
     private void SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SumaActionPerformed
         valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         operacion = 1;
-        PanelTexto.setText("");  
-        PanelTextoPrevio.setText(""+valor1);
+        PanelTexto.setText("");
+        PanelTextoPrevio.setText("" + valor1);
     }//GEN-LAST:event_SumaActionPerformed
 
     private void RestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RestaActionPerformed
         valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         operacion = 2;
         PanelTexto.setText("");
-        PanelTextoPrevio.setText(""+valor1);
+        PanelTextoPrevio.setText("" + valor1);
     }//GEN-LAST:event_RestaActionPerformed
 
     private void DosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DosActionPerformed
-        PanelTexto.setText(PanelTexto.getText() + "2");       
+        PanelTexto.setText(PanelTexto.getText() + "2");
     }//GEN-LAST:event_DosActionPerformed
 
     private void CincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CincoActionPerformed
@@ -790,13 +792,13 @@ public class Calculadora extends javax.swing.JFrame {
     private void RaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RaizActionPerformed
         valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         PanelTexto.setText(Math.sqrt(Float.parseFloat(PanelTexto.getText())) + "");
-        PanelTextoPrevio.setText("√"+valor1+"");
+        PanelTextoPrevio.setText("√" + valor1 + "");
     }//GEN-LAST:event_RaizActionPerformed
 
     private void CuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuadradoActionPerformed
         valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         PanelTexto.setText(Math.pow(Float.parseFloat(PanelTexto.getText()), 2) + "");
-        PanelTextoPrevio.setText(valor1 +""+"^2");
+        PanelTextoPrevio.setText(valor1 + "^2");
     }//GEN-LAST:event_CuadradoActionPerformed
 
     private void UnoEntreXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoEntreXActionPerformed
@@ -811,7 +813,7 @@ public class Calculadora extends javax.swing.JFrame {
         valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         operacion = 4;
         PanelTexto.setText("");
-        PanelTextoPrevio.setText(""+valor1);
+        PanelTextoPrevio.setText("" + valor1);
     }//GEN-LAST:event_DivisionActionPerformed
 
     private void MasMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MasMenosActionPerformed
@@ -842,53 +844,54 @@ public class Calculadora extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BorrarCaracterActionPerformed
 //Metodo Trigonometria
+
     public void Trigonometria() {
- 
+
         switch (funciones) {
-                //seno
-          case 11:
-            valor1 = Double.parseDouble(PanelTexto.getText());
-            PanelTextoPrevio.setText(" sin(" +valor1+ ")");
-            Sin = Math.sin(valor1);
-            PanelTexto.setText(""+Sin);
-            break;
-                //seno inverso 
-          case 12:
-            valor1 = Double.parseDouble(PanelTexto.getText());
-            PanelTextoPrevio.setText(" sin-1(" +valor1+ ")");
-            aSin = Math.asin(valor1);
-            PanelTexto.setText(""+aSin);
-            break;
-                //cos
-          case 13:
-            valor1 = Double.parseDouble(PanelTexto.getText());
-            PanelTextoPrevio.setText(" cos(" +valor1+ ")");
-            Cos = Math.cos(valor1);
-            PanelTexto.setText(Cos+"");
-            break;
-                //coseno inverso
-          case 14:
-            valor1 = Double.parseDouble(PanelTexto.getText());
-            PanelTextoPrevio.setText(" cos-1(" +valor1+ ")");
-            aCos = Math.acos(valor1);
-            PanelTexto.setText(aCos+"");
-            break;
-                //tangente
-          case 15:
-            valor1 = Double.parseDouble(PanelTexto.getText());
-            PanelTextoPrevio.setText(" tan(" +valor1+ ")");
-            Tan = Math.tan(valor1);
-            PanelTexto.setText(""+Tan);
-            break;
-                //tangente inverso
-          case 16:
-            valor1 = Double.parseDouble(PanelTexto.getText());
-            PanelTextoPrevio.setText(" tan-1(" +valor1+ ")");
-            aTan = Math.atan(valor1);
-            PanelTexto.setText(aTan+"");
-            break;
+            //seno
+            case 11:
+                valor1 = Double.parseDouble(PanelTexto.getText());
+                PanelTextoPrevio.setText(" sin(" + valor1 + ")");
+                Sin = Math.sin(valor1);
+                PanelTexto.setText("" + Sin);
+                break;
+            //seno inverso 
+            case 12:
+                valor1 = Double.parseDouble(PanelTexto.getText());
+                PanelTextoPrevio.setText(" sin-1(" + valor1 + ")");
+                aSin = Math.asin(valor1);
+                PanelTexto.setText("" + aSin);
+                break;
+            //cos
+            case 13:
+                valor1 = Double.parseDouble(PanelTexto.getText());
+                PanelTextoPrevio.setText(" cos(" + valor1 + ")");
+                Cos = Math.cos(valor1);
+                PanelTexto.setText(Cos + "");
+                break;
+            //coseno inverso
+            case 14:
+                valor1 = Double.parseDouble(PanelTexto.getText());
+                PanelTextoPrevio.setText(" cos-1(" + valor1 + ")");
+                aCos = Math.acos(valor1);
+                PanelTexto.setText(aCos + "");
+                break;
+            //tangente
+            case 15:
+                valor1 = Double.parseDouble(PanelTexto.getText());
+                PanelTextoPrevio.setText(" tan(" + valor1 + ")");
+                Tan = Math.tan(valor1);
+                PanelTexto.setText("" + Tan);
+                break;
+            //tangente inverso
+            case 16:
+                valor1 = Double.parseDouble(PanelTexto.getText());
+                PanelTextoPrevio.setText(" tan-1(" + valor1 + ")");
+                aTan = Math.atan(valor1);
+                PanelTexto.setText(aTan + "");
+                break;
+        }
     }
-}
     private void cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosActionPerformed
         funciones = 13;
         Trigonometria();
@@ -926,7 +929,7 @@ public class Calculadora extends javax.swing.JFrame {
     private void CuboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuboActionPerformed
         valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
         PanelTexto.setText(Math.pow(Float.parseFloat(PanelTexto.getText()), 3) + "");
-        PanelTextoPrevio.setText(valor1 +""+"^3");
+        PanelTextoPrevio.setText(valor1 + "" + "^3");
     }//GEN-LAST:event_CuboActionPerformed
 
     private void BorrarActualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BorrarActualActionPerformed
@@ -941,21 +944,18 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void PotenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PotenciaActionPerformed
         valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
-        valor2 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
-
-        PanelTexto.setText(Math.pow(Float.parseFloat(PanelTexto.getText()), valor1) + "");
-        
-        PanelTextoPrevio.setText(valor1+""+"^"+valor2);
+        operacion = 5;
+        PanelTexto.setText("");
+        PanelTextoPrevio.setText(valor1 + "" + "^");
     }//GEN-LAST:event_PotenciaActionPerformed
 
     private void abrir_parentesisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abrir_parentesisActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_abrir_parentesisActionPerformed
- 
+
     /**
      * @param args the command line arguments
      */
-
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
