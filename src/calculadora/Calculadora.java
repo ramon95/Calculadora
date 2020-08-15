@@ -56,9 +56,9 @@ public class Calculadora extends javax.swing.JFrame {
         cos_negativo = new javax.swing.JButton();
         sin_negativo = new javax.swing.JButton();
         tan_negativo = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        Pi = new javax.swing.JButton();
+        Cubo = new javax.swing.JButton();
+        Potencia = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
@@ -66,12 +66,14 @@ public class Calculadora extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora");
+        setBackground(new java.awt.Color(0, 0, 0));
 
-        Uno.setBackground(new java.awt.Color(204, 204, 204));
+        Uno.setBackground(new java.awt.Color(79, 136, 240));
+        Uno.setForeground(new java.awt.Color(0, 0, 0));
         Uno.setText("1");
         Uno.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Uno.setBorderPainted(false);
-        Uno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Uno.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Uno.setPreferredSize(new java.awt.Dimension(39, 30));
         Uno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,12 +81,13 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Dos.setBackground(new java.awt.Color(204, 204, 204));
+        Dos.setBackground(new java.awt.Color(79, 136, 240));
+        Dos.setForeground(new java.awt.Color(0, 0, 0));
         Dos.setText("2");
         Dos.setToolTipText("");
         Dos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Dos.setBorderPainted(false);
-        Dos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Dos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Dos.setPreferredSize(new java.awt.Dimension(39, 30));
         Dos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,11 +95,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Tres.setBackground(new java.awt.Color(204, 204, 204));
+        Tres.setBackground(new java.awt.Color(79, 136, 240));
+        Tres.setForeground(new java.awt.Color(0, 0, 0));
         Tres.setText("3");
         Tres.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Tres.setBorderPainted(false);
-        Tres.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Tres.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Tres.setPreferredSize(new java.awt.Dimension(39, 30));
         Tres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,11 +108,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Cuatro.setBackground(new java.awt.Color(204, 204, 204));
+        Cuatro.setBackground(new java.awt.Color(79, 136, 240));
+        Cuatro.setForeground(new java.awt.Color(0, 0, 0));
         Cuatro.setText("4");
         Cuatro.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Cuatro.setBorderPainted(false);
-        Cuatro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Cuatro.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Cuatro.setPreferredSize(new java.awt.Dimension(39, 30));
         Cuatro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,12 +121,13 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Cinco.setBackground(new java.awt.Color(204, 204, 204));
+        Cinco.setBackground(new java.awt.Color(79, 136, 240));
+        Cinco.setForeground(new java.awt.Color(0, 0, 0));
         Cinco.setText("5");
         Cinco.setToolTipText("");
         Cinco.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Cinco.setBorderPainted(false);
-        Cinco.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Cinco.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Cinco.setPreferredSize(new java.awt.Dimension(39, 30));
         Cinco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,11 +135,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Seis.setBackground(new java.awt.Color(204, 204, 204));
+        Seis.setBackground(new java.awt.Color(79, 136, 240));
+        Seis.setForeground(new java.awt.Color(0, 0, 0));
         Seis.setText("6");
         Seis.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Seis.setBorderPainted(false);
-        Seis.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Seis.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Seis.setPreferredSize(new java.awt.Dimension(39, 30));
         Seis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,11 +148,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Siete.setBackground(new java.awt.Color(204, 204, 204));
+        Siete.setBackground(new java.awt.Color(79, 136, 240));
+        Siete.setForeground(new java.awt.Color(0, 0, 0));
         Siete.setText("7");
         Siete.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Siete.setBorderPainted(false);
-        Siete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Siete.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Siete.setPreferredSize(new java.awt.Dimension(39, 30));
         Siete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,12 +161,13 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Ocho.setBackground(new java.awt.Color(204, 204, 204));
+        Ocho.setBackground(new java.awt.Color(79, 136, 240));
+        Ocho.setForeground(new java.awt.Color(0, 0, 0));
         Ocho.setText("8");
         Ocho.setToolTipText("");
         Ocho.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Ocho.setBorderPainted(false);
-        Ocho.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Ocho.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Ocho.setPreferredSize(new java.awt.Dimension(39, 30));
         Ocho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,11 +175,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Nueve.setBackground(new java.awt.Color(204, 204, 204));
+        Nueve.setBackground(new java.awt.Color(79, 136, 240));
+        Nueve.setForeground(new java.awt.Color(0, 0, 0));
         Nueve.setText("9");
         Nueve.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Nueve.setBorderPainted(false);
-        Nueve.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Nueve.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Nueve.setPreferredSize(new java.awt.Dimension(39, 30));
         Nueve.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,11 +188,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        Cero.setBackground(new java.awt.Color(204, 204, 204));
+        Cero.setBackground(new java.awt.Color(79, 136, 240));
+        Cero.setForeground(new java.awt.Color(0, 0, 0));
         Cero.setText("0");
         Cero.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Cero.setBorderPainted(false);
-        Cero.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Cero.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Cero.setPreferredSize(new java.awt.Dimension(39, 30));
         Cero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,10 +201,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        MasMenos.setBackground(new java.awt.Color(10, 28, 64));
+        MasMenos.setForeground(new java.awt.Color(255, 255, 255));
         MasMenos.setText("+/-");
         MasMenos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         MasMenos.setBorderPainted(false);
-        MasMenos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        MasMenos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         MasMenos.setPreferredSize(new java.awt.Dimension(39, 30));
         MasMenos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,10 +214,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Coma.setBackground(new java.awt.Color(10, 28, 64));
+        Coma.setForeground(new java.awt.Color(255, 255, 255));
         Coma.setText(".");
         Coma.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Coma.setBorderPainted(false);
-        Coma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Coma.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Coma.setPreferredSize(new java.awt.Dimension(39, 30));
         Coma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,10 +227,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Multiplicacion.setBackground(new java.awt.Color(10, 28, 64));
+        Multiplicacion.setForeground(new java.awt.Color(255, 255, 255));
         Multiplicacion.setText("x");
         Multiplicacion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Multiplicacion.setBorderPainted(false);
-        Multiplicacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Multiplicacion.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Multiplicacion.setPreferredSize(new java.awt.Dimension(39, 30));
         Multiplicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -223,10 +240,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Igual.setBackground(new java.awt.Color(10, 28, 64));
+        Igual.setForeground(new java.awt.Color(255, 255, 255));
         Igual.setText("=");
         Igual.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Igual.setBorderPainted(false);
-        Igual.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Igual.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Igual.setPreferredSize(new java.awt.Dimension(39, 30));
         Igual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -234,10 +253,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Suma.setBackground(new java.awt.Color(10, 28, 64));
+        Suma.setForeground(new java.awt.Color(255, 255, 255));
         Suma.setText("+");
         Suma.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Suma.setBorderPainted(false);
-        Suma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Suma.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Suma.setPreferredSize(new java.awt.Dimension(39, 30));
         Suma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,10 +266,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Resta.setBackground(new java.awt.Color(10, 28, 64));
+        Resta.setForeground(new java.awt.Color(255, 255, 255));
         Resta.setText("-");
         Resta.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Resta.setBorderPainted(false);
-        Resta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Resta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Resta.setMaximumSize(new java.awt.Dimension(39, 23));
         Resta.setMinimumSize(new java.awt.Dimension(39, 23));
         Resta.setPreferredSize(new java.awt.Dimension(39, 30));
@@ -258,10 +281,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Raiz.setBackground(new java.awt.Color(10, 28, 64));
+        Raiz.setForeground(new java.awt.Color(255, 255, 255));
         Raiz.setText("√x");
         Raiz.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Raiz.setBorderPainted(false);
-        Raiz.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Raiz.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Raiz.setPreferredSize(new java.awt.Dimension(39, 30));
         Raiz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -269,11 +294,13 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Cuadrado.setBackground(new java.awt.Color(10, 28, 64));
+        Cuadrado.setForeground(new java.awt.Color(255, 255, 255));
         Cuadrado.setText("X²");
         Cuadrado.setToolTipText("");
         Cuadrado.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Cuadrado.setBorderPainted(false);
-        Cuadrado.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Cuadrado.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Cuadrado.setPreferredSize(new java.awt.Dimension(39, 30));
         Cuadrado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -281,10 +308,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        UnoEntreX.setBackground(new java.awt.Color(10, 28, 64));
+        UnoEntreX.setForeground(new java.awt.Color(255, 255, 255));
         UnoEntreX.setText("1/x");
         UnoEntreX.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         UnoEntreX.setBorderPainted(false);
-        UnoEntreX.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        UnoEntreX.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         UnoEntreX.setPreferredSize(new java.awt.Dimension(39, 30));
         UnoEntreX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -292,10 +321,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Division.setBackground(new java.awt.Color(10, 28, 64));
+        Division.setForeground(new java.awt.Color(255, 255, 255));
         Division.setText("÷");
         Division.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Division.setBorderPainted(false);
-        Division.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Division.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Division.setPreferredSize(new java.awt.Dimension(39, 30));
         Division.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -303,12 +334,13 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        BorrarTodo.setBackground(new java.awt.Color(204, 0, 0));
+        BorrarTodo.setBackground(new java.awt.Color(79, 136, 240));
+        BorrarTodo.setForeground(new java.awt.Color(0, 0, 0));
         BorrarTodo.setText("C");
         BorrarTodo.setToolTipText("");
         BorrarTodo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         BorrarTodo.setBorderPainted(false);
-        BorrarTodo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BorrarTodo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BorrarTodo.setPreferredSize(new java.awt.Dimension(39, 30));
         BorrarTodo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -316,10 +348,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        Porcentaje.setBackground(new java.awt.Color(10, 28, 64));
+        Porcentaje.setForeground(new java.awt.Color(255, 255, 255));
         Porcentaje.setText("%");
         Porcentaje.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Porcentaje.setBorderPainted(false);
-        Porcentaje.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Porcentaje.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Porcentaje.setPreferredSize(new java.awt.Dimension(39, 30));
         Porcentaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -327,11 +361,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        BorrarCaracter.setBackground(new java.awt.Color(204, 0, 0));
+        BorrarCaracter.setBackground(new java.awt.Color(79, 136, 240));
+        BorrarCaracter.setForeground(new java.awt.Color(0, 0, 0));
         BorrarCaracter.setText("<--");
         BorrarCaracter.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         BorrarCaracter.setBorderPainted(false);
-        BorrarCaracter.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BorrarCaracter.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BorrarCaracter.setPreferredSize(new java.awt.Dimension(39, 30));
         BorrarCaracter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -339,10 +374,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        BorrarActual.setBackground(new java.awt.Color(79, 136, 240));
+        BorrarActual.setForeground(new java.awt.Color(0, 0, 0));
         BorrarActual.setText("Ce");
         BorrarActual.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         BorrarActual.setBorderPainted(false);
-        BorrarActual.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BorrarActual.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         BorrarActual.setPreferredSize(new java.awt.Dimension(39, 30));
         BorrarActual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -350,14 +387,18 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        PanelTexto.setBackground(new java.awt.Color(0, 51, 255));
         PanelTexto.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        PanelTexto.setForeground(new java.awt.Color(0, 0, 102));
         PanelTexto.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         PanelTexto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        cos.setBackground(new java.awt.Color(10, 28, 64));
+        cos.setForeground(new java.awt.Color(255, 255, 255));
         cos.setText("cos");
         cos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         cos.setBorderPainted(false);
-        cos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         cos.setPreferredSize(new java.awt.Dimension(39, 30));
         cos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -365,10 +406,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        sin.setBackground(new java.awt.Color(10, 28, 64));
+        sin.setForeground(new java.awt.Color(255, 255, 255));
         sin.setText("sin");
         sin.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         sin.setBorderPainted(false);
-        sin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        sin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         sin.setPreferredSize(new java.awt.Dimension(39, 30));
         sin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -376,10 +419,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        tan.setBackground(new java.awt.Color(10, 28, 64));
+        tan.setForeground(new java.awt.Color(255, 255, 255));
         tan.setText("tan");
         tan.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         tan.setBorderPainted(false);
-        tan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        tan.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tan.setPreferredSize(new java.awt.Dimension(39, 30));
         tan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -387,10 +432,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        cos_negativo.setBackground(new java.awt.Color(10, 28, 64));
+        cos_negativo.setForeground(new java.awt.Color(255, 255, 255));
         cos_negativo.setText("cos-1");
         cos_negativo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         cos_negativo.setBorderPainted(false);
-        cos_negativo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cos_negativo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         cos_negativo.setPreferredSize(new java.awt.Dimension(39, 30));
         cos_negativo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -398,10 +445,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        sin_negativo.setBackground(new java.awt.Color(10, 28, 64));
+        sin_negativo.setForeground(new java.awt.Color(255, 255, 255));
         sin_negativo.setText("sin-1");
         sin_negativo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         sin_negativo.setBorderPainted(false);
-        sin_negativo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        sin_negativo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         sin_negativo.setPreferredSize(new java.awt.Dimension(39, 30));
         sin_negativo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -409,10 +458,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        tan_negativo.setBackground(new java.awt.Color(10, 28, 64));
+        tan_negativo.setForeground(new java.awt.Color(255, 255, 255));
         tan_negativo.setText("tan-1");
         tan_negativo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         tan_negativo.setBorderPainted(false);
-        tan_negativo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        tan_negativo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tan_negativo.setPreferredSize(new java.awt.Dimension(39, 30));
         tan_negativo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -420,42 +471,71 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton7.setText("jButton1");
-        jButton7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton7.setBorderPainted(false);
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton7.setPreferredSize(new java.awt.Dimension(39, 30));
+        Pi.setBackground(new java.awt.Color(10, 28, 64));
+        Pi.setForeground(new java.awt.Color(255, 255, 255));
+        Pi.setText("π");
+        Pi.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        Pi.setBorderPainted(false);
+        Pi.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Pi.setPreferredSize(new java.awt.Dimension(39, 30));
+        Pi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PiActionPerformed(evt);
+            }
+        });
 
-        jButton8.setText("jButton1");
-        jButton8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton8.setBorderPainted(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton8.setPreferredSize(new java.awt.Dimension(39, 30));
+        Cubo.setBackground(new java.awt.Color(10, 28, 64));
+        Cubo.setForeground(new java.awt.Color(255, 255, 255));
+        Cubo.setText("X³");
+        Cubo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        Cubo.setBorderPainted(false);
+        Cubo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Cubo.setPreferredSize(new java.awt.Dimension(39, 30));
+        Cubo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CuboActionPerformed(evt);
+            }
+        });
 
-        jButton9.setText("jButton1");
-        jButton9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton9.setBorderPainted(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton9.setPreferredSize(new java.awt.Dimension(39, 30));
+        Potencia.setBackground(new java.awt.Color(10, 28, 64));
+        Potencia.setForeground(new java.awt.Color(255, 255, 255));
+        Potencia.setText("Xⁿ");
+        Potencia.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        Potencia.setBorderPainted(false);
+        Potencia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Potencia.setPreferredSize(new java.awt.Dimension(39, 30));
+        Potencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PotenciaActionPerformed(evt);
+            }
+        });
 
+        jButton10.setBackground(new java.awt.Color(10, 28, 64));
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setText("jButton1");
         jButton10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton10.setBorderPainted(false);
-        jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton10.setPreferredSize(new java.awt.Dimension(39, 30));
 
+        jButton11.setBackground(new java.awt.Color(10, 28, 64));
+        jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("jButton1");
         jButton11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton11.setBorderPainted(false);
-        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton11.setPreferredSize(new java.awt.Dimension(39, 30));
 
+        jButton12.setBackground(new java.awt.Color(10, 28, 64));
+        jButton12.setForeground(new java.awt.Color(255, 255, 255));
         jButton12.setText("jButton1");
         jButton12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton12.setBorderPainted(false);
-        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton12.setPreferredSize(new java.awt.Dimension(39, 30));
 
+        PanelTextoPrevio.setBackground(new java.awt.Color(0, 0, 102));
+        PanelTextoPrevio.setForeground(new java.awt.Color(0, 0, 102));
         PanelTextoPrevio.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         PanelTextoPrevio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -469,14 +549,6 @@ public class Calculadora extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(cos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(sin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -485,11 +557,22 @@ public class Calculadora extends javax.swing.JFrame {
                                 .addComponent(sin_negativo, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(tan_negativo, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(Pi, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Cubo, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Potencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jButton10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Raiz, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Porcentaje, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(Raiz, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
+                                    .addComponent(Porcentaje, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(BorrarActual, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -558,12 +641,7 @@ public class Calculadora extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cos_negativo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(108, 108, 108)
                         .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -578,13 +656,15 @@ public class Calculadora extends javax.swing.JFrame {
                             .addComponent(BorrarActual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BorrarCaracter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BorrarTodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Porcentaje, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Porcentaje, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Pi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(Raiz, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(Cuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(UnoEntreX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(UnoEntreX, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Cubo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(Division, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -592,7 +672,8 @@ public class Calculadora extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Siete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Ocho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Nueve, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(Nueve, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Potencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Cuatro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -772,16 +853,6 @@ public class Calculadora extends javax.swing.JFrame {
             PanelTextoPrevio.setText(PanelTextoPrevio.getText().substring(0, PanelTextoPrevio.getText().length() - 1));
         }
     }//GEN-LAST:event_BorrarCaracterActionPerformed
-
-    private void BorrarActualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BorrarActualActionPerformed
-        if (valor1 != 0) {
-            valor2 = 0;
-        } else {
-            valor1 = 0;
-        }
-        PanelTexto.setText("");
-        PanelTextoPrevio.setText("");
-    }//GEN-LAST:event_BorrarActualActionPerformed
 //Metodo Trigonometria
     public void Trigonometria() {
  
@@ -859,7 +930,36 @@ public class Calculadora extends javax.swing.JFrame {
         funciones = 16;
         Trigonometria();
     }//GEN-LAST:event_tan_negativoActionPerformed
-  
+
+    private void PiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PiActionPerformed
+        PanelTexto.setText(PanelTexto.getText() + "3.14159265359");
+    }//GEN-LAST:event_PiActionPerformed
+
+    private void CuboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuboActionPerformed
+        valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
+        PanelTexto.setText(Math.pow(Float.parseFloat(PanelTexto.getText()), 3) + "");
+        PanelTextoPrevio.setText(valor1 +""+"^3");
+    }//GEN-LAST:event_CuboActionPerformed
+
+    private void BorrarActualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BorrarActualActionPerformed
+        if (valor1 != 0) {
+            valor2 = 0;
+        } else {
+            valor1 = 0;
+        }
+        PanelTexto.setText("");
+        PanelTextoPrevio.setText("");
+    }//GEN-LAST:event_BorrarActualActionPerformed
+
+    private void PotenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PotenciaActionPerformed
+        valor1 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
+        valor2 = Float.parseFloat(PanelTexto.getText().replace(",", "."));
+
+        PanelTexto.setText(Math.pow(Float.parseFloat(PanelTexto.getText()), valor1) + "");
+        
+        PanelTextoPrevio.setText(valor1+""+"^"+valor2);
+    }//GEN-LAST:event_PotenciaActionPerformed
+ 
     /**
      * @param args the command line arguments
      */
@@ -905,6 +1005,7 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton Coma;
     private javax.swing.JButton Cuadrado;
     private javax.swing.JButton Cuatro;
+    private javax.swing.JButton Cubo;
     private javax.swing.JButton Division;
     private javax.swing.JButton Dos;
     private javax.swing.JButton Igual;
@@ -914,7 +1015,9 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton Ocho;
     private javax.swing.JLabel PanelTexto;
     private javax.swing.JLabel PanelTextoPrevio;
+    private javax.swing.JButton Pi;
     private javax.swing.JButton Porcentaje;
+    private javax.swing.JButton Potencia;
     private javax.swing.JButton Raiz;
     private javax.swing.JButton Resta;
     private javax.swing.JButton Seis;
@@ -928,9 +1031,6 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JButton sin;
     private javax.swing.JButton sin_negativo;
     private javax.swing.JButton tan;
