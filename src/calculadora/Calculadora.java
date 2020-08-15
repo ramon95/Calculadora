@@ -10,7 +10,6 @@ public class Calculadora extends javax.swing.JFrame {
     public static double valor2;
     public static double Cos, Sin, Tan, aCos, aSin, aTan;
     public static int operacion, funciones;
-    public static boolean bandComa = false;
 
     /**
      * 1 Suma 
@@ -721,7 +720,6 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void ComaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComaActionPerformed
         PanelTexto.setText(PanelTexto.getText() + ".");
-        bandComa = true;
     }//GEN-LAST:event_ComaActionPerformed
 
     private void MultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MultiplicacionActionPerformed
