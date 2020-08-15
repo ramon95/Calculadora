@@ -59,9 +59,8 @@ public class Calculadora extends javax.swing.JFrame {
         Pi = new javax.swing.JButton();
         Cubo = new javax.swing.JButton();
         Potencia = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        abrir_parentesis = new javax.swing.JButton();
+        cerrar_parentesis = new javax.swing.JButton();
         PanelTextoPrevio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -69,7 +68,6 @@ public class Calculadora extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 0, 0));
 
         Uno.setBackground(new java.awt.Color(79, 136, 240));
-        Uno.setForeground(new java.awt.Color(0, 0, 0));
         Uno.setText("1");
         Uno.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Uno.setBorderPainted(false);
@@ -82,7 +80,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Dos.setBackground(new java.awt.Color(79, 136, 240));
-        Dos.setForeground(new java.awt.Color(0, 0, 0));
         Dos.setText("2");
         Dos.setToolTipText("");
         Dos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -96,7 +93,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Tres.setBackground(new java.awt.Color(79, 136, 240));
-        Tres.setForeground(new java.awt.Color(0, 0, 0));
         Tres.setText("3");
         Tres.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Tres.setBorderPainted(false);
@@ -109,7 +105,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Cuatro.setBackground(new java.awt.Color(79, 136, 240));
-        Cuatro.setForeground(new java.awt.Color(0, 0, 0));
         Cuatro.setText("4");
         Cuatro.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Cuatro.setBorderPainted(false);
@@ -122,7 +117,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Cinco.setBackground(new java.awt.Color(79, 136, 240));
-        Cinco.setForeground(new java.awt.Color(0, 0, 0));
         Cinco.setText("5");
         Cinco.setToolTipText("");
         Cinco.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -136,7 +130,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Seis.setBackground(new java.awt.Color(79, 136, 240));
-        Seis.setForeground(new java.awt.Color(0, 0, 0));
         Seis.setText("6");
         Seis.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Seis.setBorderPainted(false);
@@ -149,7 +142,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Siete.setBackground(new java.awt.Color(79, 136, 240));
-        Siete.setForeground(new java.awt.Color(0, 0, 0));
         Siete.setText("7");
         Siete.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Siete.setBorderPainted(false);
@@ -162,7 +154,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Ocho.setBackground(new java.awt.Color(79, 136, 240));
-        Ocho.setForeground(new java.awt.Color(0, 0, 0));
         Ocho.setText("8");
         Ocho.setToolTipText("");
         Ocho.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -176,7 +167,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Nueve.setBackground(new java.awt.Color(79, 136, 240));
-        Nueve.setForeground(new java.awt.Color(0, 0, 0));
         Nueve.setText("9");
         Nueve.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Nueve.setBorderPainted(false);
@@ -189,7 +179,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         Cero.setBackground(new java.awt.Color(79, 136, 240));
-        Cero.setForeground(new java.awt.Color(0, 0, 0));
         Cero.setText("0");
         Cero.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Cero.setBorderPainted(false);
@@ -335,7 +324,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         BorrarTodo.setBackground(new java.awt.Color(79, 136, 240));
-        BorrarTodo.setForeground(new java.awt.Color(0, 0, 0));
         BorrarTodo.setText("C");
         BorrarTodo.setToolTipText("");
         BorrarTodo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -362,7 +350,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         BorrarCaracter.setBackground(new java.awt.Color(79, 136, 240));
-        BorrarCaracter.setForeground(new java.awt.Color(0, 0, 0));
         BorrarCaracter.setText("<--");
         BorrarCaracter.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         BorrarCaracter.setBorderPainted(false);
@@ -375,7 +362,6 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         BorrarActual.setBackground(new java.awt.Color(79, 136, 240));
-        BorrarActual.setForeground(new java.awt.Color(0, 0, 0));
         BorrarActual.setText("Ce");
         BorrarActual.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         BorrarActual.setBorderPainted(false);
@@ -510,29 +496,26 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton10.setBackground(new java.awt.Color(10, 28, 64));
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("jButton1");
-        jButton10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton10.setBorderPainted(false);
-        jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton10.setPreferredSize(new java.awt.Dimension(39, 30));
+        abrir_parentesis.setBackground(new java.awt.Color(10, 28, 64));
+        abrir_parentesis.setForeground(new java.awt.Color(255, 255, 255));
+        abrir_parentesis.setText("(");
+        abrir_parentesis.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        abrir_parentesis.setBorderPainted(false);
+        abrir_parentesis.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        abrir_parentesis.setPreferredSize(new java.awt.Dimension(39, 30));
+        abrir_parentesis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                abrir_parentesisActionPerformed(evt);
+            }
+        });
 
-        jButton11.setBackground(new java.awt.Color(10, 28, 64));
-        jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setText("jButton1");
-        jButton11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton11.setBorderPainted(false);
-        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton11.setPreferredSize(new java.awt.Dimension(39, 30));
-
-        jButton12.setBackground(new java.awt.Color(10, 28, 64));
-        jButton12.setForeground(new java.awt.Color(255, 255, 255));
-        jButton12.setText("jButton1");
-        jButton12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jButton12.setBorderPainted(false);
-        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton12.setPreferredSize(new java.awt.Dimension(39, 30));
+        cerrar_parentesis.setBackground(new java.awt.Color(10, 28, 64));
+        cerrar_parentesis.setForeground(new java.awt.Color(255, 255, 255));
+        cerrar_parentesis.setText(")");
+        cerrar_parentesis.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        cerrar_parentesis.setBorderPainted(false);
+        cerrar_parentesis.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        cerrar_parentesis.setPreferredSize(new java.awt.Dimension(39, 30));
 
         PanelTextoPrevio.setBackground(new java.awt.Color(0, 0, 102));
         PanelTextoPrevio.setForeground(new java.awt.Color(0, 0, 102));
@@ -547,7 +530,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 7, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(cos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(sin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -564,9 +547,9 @@ public class Calculadora extends javax.swing.JFrame {
                                     .addComponent(Cubo, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(Potencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jButton10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(abrir_parentesis, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(cerrar_parentesis, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(MasMenos, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -588,27 +571,30 @@ public class Calculadora extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(BorrarTodo, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(Cuatro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Siete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(Uno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(MasMenos, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(Ocho, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(Nueve, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(Cinco, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(Dos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(Cero, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(Cuatro, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
+                                            .addComponent(Siete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(Uno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Seis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(Tres, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(Coma, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                    .addComponent(Cinco, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(Dos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(Seis, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(Tres, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(Ocho, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(Nueve, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(Cero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(Coma, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
@@ -642,15 +628,15 @@ public class Calculadora extends javax.swing.JFrame {
                         .addComponent(cos_negativo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(108, 108, 108)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(abrir_parentesis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cerrar_parentesis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(sin_negativo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tan_negativo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(tan_negativo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MasMenos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(BorrarActual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -672,30 +658,32 @@ public class Calculadora extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Siete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Ocho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Nueve, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Potencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Cuatro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Cinco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Seis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(Cinco, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Uno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Dos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Tres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(Dos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(Cero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(MasMenos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Coma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Igual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(Multiplicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(Multiplicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Nueve, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Resta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(Resta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Seis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Suma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(Suma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Tres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap())
         );
 
@@ -959,6 +947,10 @@ public class Calculadora extends javax.swing.JFrame {
         
         PanelTextoPrevio.setText(valor1+""+"^"+valor2);
     }//GEN-LAST:event_PotenciaActionPerformed
+
+    private void abrir_parentesisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abrir_parentesisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_abrir_parentesisActionPerformed
  
     /**
      * @param args the command line arguments
@@ -1026,11 +1018,10 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton Tres;
     private javax.swing.JButton Uno;
     private javax.swing.JButton UnoEntreX;
+    private javax.swing.JButton abrir_parentesis;
+    private javax.swing.JButton cerrar_parentesis;
     private javax.swing.JButton cos;
     private javax.swing.JButton cos_negativo;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton sin;
     private javax.swing.JButton sin_negativo;
     private javax.swing.JButton tan;
